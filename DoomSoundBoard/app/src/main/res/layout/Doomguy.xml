@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DoomSoundBoard"
+    android:background="@drawable/doombgpng">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txtmusic"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnitempickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Pickup"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnweaponpickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weapon Pickup"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnpowerup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Power up"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnteleport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teleport"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnnextmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next Map"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnactivatehitground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activate / Hitground"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btninjured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Injured"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btndeath1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Death 1"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btndeath2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Death 2"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btndeath3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Death 3"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Music"
+        android:id="@+id/btnchangemusic"
+        android:background="@null"
+        android:textSize="30dp"
+        android:textColor="#fa0000"
+        android:textStyle="bold"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doomguy:"
+        android:id="@+id/txtmusic"
+        android:background="@null"
+        android:textColor="#fa0000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/btnreturn"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:textSize="30dp"
+        android:textColor="#fa0000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/btnstop"
+        android:background="@null"
+        android:textSize="30dp"
+        android:textColor="#fa0000"
+        android:textStyle="bold"
+        android:layout_above="@+id/adView"
+        android:layout_toEndOf="@+id/btnreturn" />
+
+
+</RelativeLayout>

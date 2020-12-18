@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DoomSoundBoard"
+    android:background="@drawable/doombgpng">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txtmusic"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/btnreturn">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnatdoomsgate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Doom's Gate"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnhidingthesecrets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiding The Secrets"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnintermissionfromdoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intermission From Doom"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnisawedthedemons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I Sawed The Demons"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnsignofevil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Of Evil"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnsweetlittledeadbunny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sweet Little Dead Bunny"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnthedemonsdead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Demon's Dead"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btntheendofdoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The End Of DOOM"
+                android:background="@null"
+                android:textColor="#fa0000"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music:"
+        android:id="@+id/txtmusic"
+        android:background="@null"
+        android:textColor="#fa0000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/btnreturn"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:textSize="30dp"
+        android:textColor="#fa0000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/btnstop"
+        android:background="@null"
+        android:textSize="30dp"
+        android:textColor="#fa0000"
+        android:textStyle="bold"
+        android:layout_above="@+id/adView"
+        android:layout_toEndOf="@+id/btnreturn" />
+
+
+</RelativeLayout>
